@@ -17,7 +17,7 @@ class CreatePicturesTable extends Migration
             $table->id();
             $table->integer("user_id");
             $table->string("filename");
-
+            $table->boolean("is_allowed");
             $table->timestamps();
         });
     }

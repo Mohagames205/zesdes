@@ -3,7 +3,6 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
 
 class UploadController extends Controller
@@ -11,13 +10,12 @@ class UploadController extends Controller
 
     public function init(Request $request)
     {
-        $this->validate($request);
+        // validate hier
     }
 
-    public function validate(Request $request)
+    public function send()
     {
-        $request->file('photo');
-
+        return view("dashboard");
     }
 
 
