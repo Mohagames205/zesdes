@@ -47,14 +47,6 @@
                         </div>
                     </div>
                 </div>
-                @foreach(\App\Models\Picture::all() as $picture)
-                    @if($picture->is_allowed)
-                         <img src="{{ asset('/pictures/' . $picture->filename)  }}">
-                    @endif
-
-                @endforeach
-
             </div>
-
     </body>
 </html>

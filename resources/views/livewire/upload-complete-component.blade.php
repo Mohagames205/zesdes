@@ -25,6 +25,9 @@
                     <a href="/upload">
                         <x-jet-button>Uploaden</x-jet-button>
                     </a>
+                    <a href="/queue">
+                        <x-jet-button>Status</x-jet-button>
+                    </a>
                 </div>
 
             </div>

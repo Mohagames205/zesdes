@@ -9,6 +9,7 @@
     }
 </style>
 
+
 <x-slot name="header">
     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
         Upload
@@ -27,36 +28,38 @@
                 </div>
 
                 <div class="bg-gray-200 bg-opacity-25">
-
                     <div class="p-6">
-                        <table>
-                            <thead>
+                        @if(count(auth()->user()->pictures) > 0)
+                            <table>
+                                <thead>
                                 <tr>
                                     <th>Foto</th>
                                     <th>Status</th>
                                     <th>Geupload op</th>
                                 </tr>
-                            </thead>
-                            <tbody>
-                        @foreach(auth()->user()->pictures as $picture)
-                            <tr class="pt-5">
-                                <td><a href="{{ asset('/pictures/' . $picture->filename)  }}">Klik hier</a></td>
-                                <td>{{ $picture->is_approved ? 'Goedgekeurd' : 'Afgewezen' }}</td>
-                                <td>{{ $picture->created_at }}</td>
-                            </tr>
+                                </thead>
+                                <tbody>
+                                @foreach(auth()->user()->pictures as $picture)
+                                    <tr class="pt-5">
+                                        <td><a href="{{ asset('/pictures/' . $picture->filename)  }}">Klik hier</a></td>
+                                        <td>{{ $picture->is_allowed ? 'Goedgekeurd' : 'In behandeling' }}</td>
+                                        <td>{{ $picture->created_at }}</td>
+                                    </tr>
 
-                        @endforeach
-                            </tbody>
-                    </table>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        @else
+                            <h2> Oops, je hebt nog geen foto geupload! </h2>
+                        @endif
+
+
+{{--
+
+                    --}}
                     </div>
-
                 </div>
-
-
             </div>
-
         </div>
     </div>
-
-
 </div>
