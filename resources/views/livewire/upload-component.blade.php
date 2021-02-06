@@ -19,7 +19,7 @@
         <div class="p-6">
             <div class="flex items-center">
                 {{-- <input class="p-6" type="file" wire:model="photos" multiple> --}}
-                <input wire:model="photos" type="file" name="attachment" id="upload{{ $iteration }}" multiple/>
+                <input wire:model="photos" type="file" accept="image/*" name="attachment" id="upload{{ $iteration }}" multiple/>
                 <br><br>
                 <div wire:loading wire:target="photos">Uploading...</div>
                 <br>
