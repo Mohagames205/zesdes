@@ -19,7 +19,7 @@ class IsModerator
     {
         if(!Auth::check() || !$request->user()->is_mod)
         {
-            return redirect('/');
+            abort(403);
         }
         return $next($request);
     }
