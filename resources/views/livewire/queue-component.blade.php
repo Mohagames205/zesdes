@@ -52,11 +52,6 @@
                         @else
                             <h2> Oops, je hebt nog geen foto geupload! </h2>
                         @endif
-
-
-{{--
-
-                    --}}
                     </div>
                 </div>
             </div>

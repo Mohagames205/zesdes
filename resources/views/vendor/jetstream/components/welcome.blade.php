@@ -17,14 +17,14 @@
 <div class="bg-gray-200 bg-opacity-25">
     <div class="p-6">
         <div class="flex items-center">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  class="w-8 h-8 text-gray-400" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"  width="18px" height="18px"><g><g><g><path d="M11.88,9.14c1.28,0.06,1.61,1.15,1.63,1.66h1.79c-0.08-1.98-1.49-3.19-3.45-3.19C9.64,7.61,8,9,8,12.14 c0,1.94,0.93,4.24,3.84,4.24c2.22,0,3.41-1.65,3.44-2.95h-1.79c-0.03,0.59-0.45,1.38-1.63,1.44C10.55,14.83,10,13.81,10,12.14 C10,9.25,11.28,9.16,11.88,9.14z M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12,20c-4.41,0-8-3.59-8-8 s3.59-8,8-8s8,3.59,8,8S16.41,20,12,20z"/></g></g></g></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"  class="w-8 h-8 text-gray-400 " xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"  width="18px" height="18px"><g><g><g><path d="M11.88,9.14c1.28,0.06,1.61,1.15,1.63,1.66h1.79c-0.08-1.98-1.49-3.19-3.45-3.19C9.64,7.61,8,9,8,12.14 c0,1.94,0.93,4.24,3.84,4.24c2.22,0,3.41-1.65,3.44-2.95h-1.79c-0.03,0.59-0.45,1.38-1.63,1.44C10.55,14.83,10,13.81,10,12.14 C10,9.25,11.28,9.16,11.88,9.14z M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12,20c-4.41,0-8-3.59-8-8 s3.59-8,8-8s8,3.59,8,8S16.41,20,12,20z"/></g></g></g></svg>
 
             <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Geen copyrighted foto's</div>
         </div>
 
         <div class="ml-12">
             <div class="mt-2 text-base text-gray-500">
-                De geuploade foto mag niet gecopyright zijn, dit betekent dus dat het verboden is om foto's te uploaden van andere mensen zonder hun toestemming (foto's van leerkrachten ook). Als dit toch het geval is, dan wordt de foto afgewezen en zal deze niet in de gallerij staan.
+                De geüploade foto mag niet gecopyright zijn, dit betekent dus dat het verboden is om foto's te uploaden van andere mensen zonder hun toestemming (foto's van leerkrachten ook). Als dit toch het geval is, dan wordt de foto afgewezen en zal deze niet in de gallerij staan.
             </div>
 
             <a href="https://nl.wikipedia.org/wiki/Copyright">
@@ -49,11 +49,30 @@
 
         <div class="ml-12">
             <div class="mt-2 text-base text-gray-500">
-                De foto's die je upload zullen toegankelijk zijn door iedereen met de link en de QR code. Dus let goed op met wat je uploadt!
+                De foto's die je uploadt zullen toegankelijk zijn door iedereen met de link en de QR code. Dus let goed op met wat je uploadt!
             </div>
 
 
         </div>
+
+
+
+    </div>
+    <hr>
+    <div class="p-6">
+        <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8"  viewBox="0 0 24 24" fill="black"><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm1 13h-2v-2h2v2zm0-4h-2V7h2v6z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-5h2v2h-2zm0-8h2v6h-2z"/></svg>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Problemen?</div>
+        </div>
+
+        <div class="ml-12">
+            <div class="mt-2 text-base text-gray-500">
+                Gelieve problemen op de website zo snel mogelijk te melden aan Mohamed via het contactformulier op <a href="https://mohamedelyousfi.be/#contact" class="text-indigo-500"><b>mijn website</b></a>. <br> Beschrijf zo goed mogelijk het probleem!</b>
+            </div>
+
+
+        </div>
+
 
 
     </div>
