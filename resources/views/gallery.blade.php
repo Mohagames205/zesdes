@@ -25,7 +25,7 @@
 
         .banner {
             margin-bottom: 50px;
-            text-align: center;
+
         }
 
         .banner-content {
@@ -42,7 +42,8 @@
             text-align: center;
         }
 
-        p.banner {
+        .banner-content p {
+            text-align: justify;
             word-wrap: break-word;
         }
 
