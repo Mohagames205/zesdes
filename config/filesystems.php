@@ -47,12 +47,6 @@ return [
             'root' => storage_path('app/pictures'),
             'url' => env('APP_URL').'/pictures',
             'visibility' => 'public',
-
-            'cache' => [
-                'store' => 'memcached',
-                'expire' => 600,
-                'prefix' => 'cache-prefix',
-            ],
         ],
 
         's3' => [
