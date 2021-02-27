@@ -22,6 +22,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/gallery', function () {
+    return view('gallery');
+})->name('gallery');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
