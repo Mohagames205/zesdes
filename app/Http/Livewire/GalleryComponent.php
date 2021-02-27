@@ -14,7 +14,7 @@ class GalleryComponent extends Component
     public function render()
     {
         return view('livewire.gallery-component', [
-            'pictures' => Picture::paginate(10),
+            'pictures' => Picture::where('is_allowed', true)->paginate(10),
         ]);
 
     }

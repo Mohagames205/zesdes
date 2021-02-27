@@ -22,6 +22,30 @@
             margin: 60px 60px 0;
         }
 
+
+        .banner {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .banner-content {
+
+            border-width: medium;
+            border-color: black;
+            border-style: solid;
+
+            padding: 50px;
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 50vw;
+            text-align: center;
+        }
+
+        p.banner {
+            word-wrap: break-word;
+        }
+
         img {
             border-radius: 3px;
         }
@@ -66,6 +90,14 @@
 
 
         @media (max-width: 800px) {
+
+
+            .banner-content {
+                padding: 10px;
+                margin: 10px;
+                width: unset;
+            }
+
             .foto-container {
                 padding: 0px;
             }
