@@ -40,11 +40,13 @@
                     <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                         <x-jet-application-logo></x-jet-application-logo>
                     </div>
-
-                    <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                    <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg text-center">
                         <div class="grid grid-cols-1 md:grid-cols-2 p-6">
-                            <p class="dark:text-white ">Deze website is in onderhoud!</p>
+                            <a href="{{ route('login') }}" class="text-sm text-black dark:text-white underline">Login</a>
+
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-black dark:text-white underline">Account aanmaken</a>
                         </div>
+
                     </div>
                 </div>
             </div>
