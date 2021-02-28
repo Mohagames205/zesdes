@@ -13,10 +13,13 @@
         <div class="photos" id="photos">
                 @foreach($pictures as $picture)
                     <div class="foto-container">
-                        <img src="{{ asset('/pictures/' . $picture->filename) }}" width="500px" height=auto/>
+                        <img data-enlargeable style="cursor: zoom-in" src="{{ asset('/pictures/' . $picture->filename) }}" width="500px" height=auto alt="foto">
                     </div>
                 @endforeach
         </div>
-
+    <br>
+    <hr>
+    <div class="mb-4 mt-4">
     {{ $pictures->links() }}
+    </div>
 </div>
