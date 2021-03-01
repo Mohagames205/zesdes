@@ -22,7 +22,7 @@
                         <div class="flex flex-wrap gap-6 p-6 justify-center">
                             @foreach($pictures as $picture)
                                 <div class="flex-shrink" style="flex-basis: 30%">
-                                    <img class="rounded shadow" style="flex-basis: 30%; width: 400px;" src="{{ asset('/pictures/' . $picture->filename) }}" alt="geuploade foto">
+                                    <img title={{ $picture->user->name }} class="rounded shadow" style="flex-basis: 30%; width: 400px;" src="{{ asset('/pictures/' . $picture->filename) }}" alt="geuploade foto">
                                     <div class="mt-2">
                                         <x-jet-button wire:click="accept({{ $picture->id }})">Accept</x-jet-button>
                                         <x-jet-button wire:click="deny({{ $picture->id }})" class="bg-red-600">Deny</x-jet-button>
