@@ -29,5 +29,10 @@ class GalleryComponent extends Component
         $this->redirect(route('login'));
     }
 
+    public function upload()
+    {
+        $this->redirect(route('dashboard'));
+    }
+
 
 }
