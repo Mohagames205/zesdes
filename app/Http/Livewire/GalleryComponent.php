@@ -19,20 +19,5 @@ class GalleryComponent extends Component
 
     }
 
-    public function register()
-    {
-        $this->redirect(route('register'));
-    }
-
-    public function login()
-    {
-        $this->redirect(route('login'));
-    }
-
-    public function upload()
-    {
-        $this->redirect(route('dashboard'));
-    }
-
 
 }
