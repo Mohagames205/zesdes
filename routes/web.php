@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view(env('HOME', 'welcome'));
+    return view('gallery');
 })->name('home');
 
 Route::get('/gallery', function () {
