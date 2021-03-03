@@ -7,8 +7,12 @@
 
             <p>Wil je zelf een foto uploaden? Maak dan nu een account aan en upload al je favoriete herinneringen!</p>
             <div class="mt-5">
+                @if(!Auth::check())
                 <x-jet-button wire:click="register()">Account aanmaken</x-jet-button>
                 <x-jet-button wire:click="login()">Inloggen</x-jet-button>
+                @else
+                <x-jet-button wire:click="upload()">Uploadzone</x-jet-button>
+                @endif
             </div>
 
         </div>

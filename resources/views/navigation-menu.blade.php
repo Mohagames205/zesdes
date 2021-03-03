@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ route('home') }}">
                         <x-jet-application-mark class="block h-9 w-auto" />
                     </a>
                 </div>
@@ -17,6 +17,9 @@
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('queue') }}" :active="request()->routeIs('queue')">
                         Wachtlijst
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                        Home
                     </x-jet-nav-link>
                 </div>
             </div>
@@ -146,6 +149,9 @@
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('queue') }}" :active="request()->routeIs('queue')">
                 Wachtlijst
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                Home
             </x-jet-responsive-nav-link>
         </div>
 
