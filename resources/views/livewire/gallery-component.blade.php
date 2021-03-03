@@ -5,7 +5,12 @@
 
             <x-jet-application-logo ></x-jet-application-logo>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed libero id nulla maximus lacinia at non augue. Donec dapibus, sem vitae tempor pharetra, massa libero viverra felis, eget bibendum felis elit vel lectus. Cras finibus cursus fringilla. Proin egestas nunc sed turpis fringilla scelerisque. Quisque est nisl, venenatis quis purus sed, tincidunt hendrerit massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. In vitae feugiat enim. Sed tempor, neque vel vestibulum fermentum, metus odio bibendum ante, in lacinia ex ante sed elit. Nulla porttitor placerat nisl, ut egestas tellus mollis vel. Nulla facilisi. Sed suscipit elit est, id condimentum lectus consectetur eu. In vulputate augue eget nisi pulvinar tristique. Praesent eu imperdiet risus. Maecenas viverra facilisis nibh.</p>
+            <p>Wil je zelf een foto uploaden? Maak dan nu een account aan en upload al je favoriete herinneringen!</p>
+            <div class="mt-5">
+                <x-jet-button wire:click="register()">Account aanmaken</x-jet-button>
+                <x-jet-button wire:click="login()">Inloggen</x-jet-button>
+            </div>
+
         </div>
     </div>
 
@@ -22,4 +27,27 @@
     <div class="mb-4 mt-4">
     {{ $pictures->links() }}
     </div>
+
+    <script>
+        $('img[data-enlargeable]').addClass('img-enlargeable').click(function(){
+            var src = $(this).attr('src');
+            var modal;
+            function removeModal(){ modal.remove(); $('body').off('keyup.modal-close'); }
+            modal = $('<div>').css({
+                background: 'RGBA(0,0,0,.65) url('+src+') no-repeat center',
+                backgroundSize: 'contain',
+                width:'100%', height:'100%',
+                position:'fixed',
+                zIndex:'10000',
+                top:'0', left:'0',
+                cursor: 'zoom-out'
+            }).click(function(){
+                removeModal();
+            }).appendTo('body');
+            //handling ESC
+            $('body').on('keyup.modal-close', function(e){
+                if(e.key==='Escape'){ removeModal(); }
+            });
+        });
+    </script>
 </div>

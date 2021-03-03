@@ -19,5 +19,15 @@ class GalleryComponent extends Component
 
     }
 
+    public function register()
+    {
+        $this->redirect(route('register'));
+    }
+
+    public function login()
+    {
+        $this->redirect(route('login'));
+    }
+
 
 }
