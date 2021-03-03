@@ -9,7 +9,7 @@
         Welkom op de uploadzone, {{ auth()->user()->name }}
     </div>
     <div class="mt-6 text-gray-500">
-        Lees eerst eventjes aandachtig de regels voordat je verder gaat. Druk daarna op "begrepen" om naar <b>uploadzone</b> te gaan.<br>
+        Lees eerst eventjes aandachtig de regels voordat je verder gaat. Druk daarna op "begrepen" om naar de <b>uploadzone</b> te gaan.<br>
     </div>
 </div>
 
