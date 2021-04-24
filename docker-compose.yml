@@ -43,7 +43,7 @@ services:
     ports:
       - "1234:3306"
     environment:
-      MYSQL_DATABASE: laravel
+      MYSQL_DATABASE: school
       MYSQL_ROOT_PASSWORD: thepassword
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
