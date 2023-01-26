@@ -43,6 +43,8 @@ COPY . /var/www
 # Copy existing application directory permissions
 COPY --chown=www:www . /var/www
 
+RUN composer install
+
 RUN php artisan key:generate
 
 # Change current user to www
