@@ -1,5 +1,7 @@
 # Atheneum De Ring | Zesdes
 
+> **Warning** this app was my first interaction with the Laravel filesystem and Livewire, so there is a very high likelyhood that it contains lots of bugs!!! 
+
 A simple website that allows users to upload their own pictures, after approval the picture appears on the gallery on the homepage.
 
 ## Stack
